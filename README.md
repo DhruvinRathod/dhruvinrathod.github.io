@@ -1,20 +1,24 @@
 # Dhruvinsinh Rathod — Portfolio
 
-A responsive, single-page software engineering portfolio built with plain HTML, CSS and JavaScript. It has no build step and is ready for GitHub Pages.
+Recruiter-focused personal portfolio for software engineering and Java/backend working-student opportunities in Germany.
 
-## Publish with GitHub Pages
+## Positioning
 
-1. Create a new public GitHub repository, for example `portfolio`.
-2. Upload everything in this folder to the repository root.
-3. Open **Settings → Pages** in the repository.
-4. Under **Build and deployment**, choose **Deploy from a branch**.
-5. Select the `main` branch and `/ (root)`, then save.
+- 3+ years of professional software engineering experience
+- Java, Spring Boot, Spring Batch, REST, microservices, SQL and data integration
+- Testing, code quality, CI/CD and application modernization
+- Current M.Sc. Computer Science studies at Paderborn University
+- Selected machine-learning and LLM research as an additional technical area
 
-GitHub will provide a URL similar to `https://your-username.github.io/portfolio/`.
+## Portfolio sections
 
-## Customize
+1. Recruiter snapshot and professional highlights
+2. Accenture experience with concrete, interview-defensible work
+3. Industry-standard technical skill categories
+4. Selected backend, web and research projects
+5. Certifications and awards
+6. IEEE leadership, mentoring and speaking
+7. Education
+8. Email, LinkedIn, GitHub and résumé contact paths
 
-- Main content: `index.html`
-- Colors and layout: `styles.css`
-- Mobile navigation and reveal effects: `script.js`
-- Downloadable résumé: `assets/Dhruvinsinh-Rathod-Resume.pdf`
+The public site intentionally does not expose a phone number.
