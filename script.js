@@ -1,3 +1,8 @@
+const recruiterStyles = document.createElement('link');
+recruiterStyles.rel = 'stylesheet';
+recruiterStyles.href = 'recruiter.css';
+document.head.appendChild(recruiterStyles);
+
 const menuButton = document.querySelector('.menu-toggle');
 const navigation = document.querySelector('.site-nav');
 
