@@ -24,17 +24,17 @@ if ('IntersectionObserver' in window && !reducedMotion) {
         revealObserver.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.1 });
+  }, { threshold: 0.08 });
 
   revealItems.forEach((item, index) => {
-    item.style.transitionDelay = `${Math.min(index % 4, 3) * 45}ms`;
+    item.style.transitionDelay = `${Math.min(index % 3, 2) * 40}ms`;
     revealObserver.observe(item);
   });
 } else {
   revealItems.forEach((item) => item.classList.add('visible'));
 }
 
-const navLinks = [...document.querySelectorAll('.site-nav a')];
+const navLinks = [...document.querySelectorAll('.site-nav a[href^="#"]')];
 const navTargets = navLinks
   .map((link) => document.querySelector(link.getAttribute('href')))
   .filter(Boolean);
@@ -52,19 +52,6 @@ if ('IntersectionObserver' in window) {
   }, { rootMargin: '-28% 0px -58% 0px', threshold: [0.05, 0.2, 0.5] });
 
   navTargets.forEach((section) => navObserver.observe(section));
-}
-
-const heroCard = document.querySelector('.hero-card');
-if (heroCard && !reducedMotion && window.matchMedia('(pointer:fine)').matches) {
-  heroCard.addEventListener('pointermove', (event) => {
-    const rect = heroCard.getBoundingClientRect();
-    const x = (event.clientX - rect.left) / rect.width - 0.5;
-    const y = (event.clientY - rect.top) / rect.height - 0.5;
-    heroCard.style.transform = `perspective(900px) rotateX(${(-y * 2.5).toFixed(2)}deg) rotateY(${(x * 3).toFixed(2)}deg) translateY(-2px)`;
-  });
-  heroCard.addEventListener('pointerleave', () => {
-    heroCard.style.transform = '';
-  });
 }
 
 const year = document.querySelector('#year');
