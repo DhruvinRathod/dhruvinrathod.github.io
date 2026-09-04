@@ -1,6 +1,10 @@
 const menuButton = document.querySelector('.menu-toggle');
 const navigation = document.querySelector('.site-nav');
 
+// Keep the HTYLLM2 project focused on work and methods rather than result metrics
+// that are not part of the current public CV story.
+document.querySelectorAll('.project-results').forEach((results) => results.remove());
+
 menuButton?.addEventListener('click', () => {
   const isOpen = navigation.classList.toggle('open');
   menuButton.setAttribute('aria-expanded', String(isOpen));
